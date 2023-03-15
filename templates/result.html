@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Prediction Result</h1>
+      <p class="result-text"><strong>{{ prediction }}</strong></p>
+      <p class="result-warning">If fire or smoke has been found, please contact your local wildfire response authority immediately.</p>
+    </div>
+  </body>
+</html>
+

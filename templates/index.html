@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Wildfire Detection Model</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container title">
+      <h1>Wildfire Detection Model</h1>
+
+		<form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+
+          <div class="boxed-section about">
+            <p class="section-title">About the Model</p>
+            <p class="section-text">Our wildfire detection model uses an advanced machine learning algorithm to analyse imagery data and identify areas experiencing wildfires. By using this model, we hope to help prevent wildfires and protect people and property from harm.</p>
+          </div>
+
+          <div class="boxed-section drag">
+            <p class="drag-text"><b>Drag & drop or select chosen file below</b></p>
+          </div>
+
+          <input type="file" name="file">
+          <input type="submit" value="Predict">
+        </form>
+    </div>
+
+    <div class="boxed-section contact">
+      <p class="section-title">Contact Us</p>
+      <p class="section-text">If you have any questions or concerns about our wildfire detection model, please don't hesitate to get in touch with us. You can reach us by email, phone, or social media.</p>
+    </div>
+
+  </body>
+</html>
